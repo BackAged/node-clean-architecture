@@ -9,4 +9,4 @@
 3. run `dokcer-compose up` to start the development server with all dependencies
 
 ## Test
-yarn test# node-clean-architecture
+    `yarn test` to run test
