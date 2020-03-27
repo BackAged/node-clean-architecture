@@ -1,0 +1,15 @@
+# Development image not for production
+FROM node:10-slim
+
+WORKDIR /server
+
+#COPY package.json .
+
+RUN yarn install
+
+#COPY . /server
+
+EXPOSE 3000
+CMD [ "yarn", "dev" ]
+
+#ENTRYPOINT ["node dist/index.js"]
