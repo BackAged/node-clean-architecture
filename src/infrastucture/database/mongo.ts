@@ -84,6 +84,7 @@ export const initializeDBConnection = async (dbURI: string, dbName: string): Pro
     const client = new MongoClient(dbURI, { useNewUrlParser: true, useUnifiedTopology: true });
 
     try {
+        console.log(dbURI)
         await client.connect();
     } catch (e) {
         console.log("failed to connect the database server");

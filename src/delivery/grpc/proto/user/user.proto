@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package nodeCleanArchitecture;
+
+service UserCrud {
+  rpc CreateUser (CreateUserRequest) returns (User) {}
+  rpc GetUser (GetUserRequest) returns (User) {}
+}
+
+message User {
+    string name = 1;
+    int32 age = 2;
+    enum Gender {
+      Male = 0;
+      Female = 1;
+    }
+    Gender gender = 3;
+    bool adult = 4;
+}
+
+message CreateUserRequest {
+  string name = 1;
+  int32 age = 2;
+  enum Gender {
+    Male = 0;
+    Female = 1;
+  }
+  Gender gender = 3;
+}
+
+message GetUserRequest {
+    string userID = 1;
+}

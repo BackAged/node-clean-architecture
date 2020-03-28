@@ -11,7 +11,7 @@ interface Config {
 
 const config: Config = {
     MONGO: {
-        MONGO_HOST: process.env.MONGO_HOST || "mongodb://db:27017",
+        MONGO_HOST: process.env.MONGO_HOST || "mongodb://localhost:27017",
         MONGO_DB: process.env.MONGO_DB || "user"
     },
     APPLICATION_SERVER_PORT: Number(process.env.APPLICATION_SERVER_PORT) || 3000,

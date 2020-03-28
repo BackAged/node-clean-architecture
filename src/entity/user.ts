@@ -31,6 +31,8 @@ export class User {
         if (gender !== Gender.Male && gender !== Gender.Female) {
             errors.push("Invalid gender");
         }
+        
+        console.log(errors);
         return errors;
     }
 
