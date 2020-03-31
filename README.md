@@ -1,4 +1,4 @@
-## Node Clean Architecture User Rest and GRPC API V1
+## Node Clean Architecture (User Rest and GRPC API V1)
 
 ## Installation
 
