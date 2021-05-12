@@ -38,7 +38,7 @@
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "google-protobuf": "^3.11.4",
-    "grpc": "^1.24.2",
+    "grpc": "^1.24.9",
     "grpc-tools": "^1.8.1",
     "grpc_tools_node_protoc_ts": "^2.5.10",
     "mongodb": "^3.3.2",
